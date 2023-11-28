@@ -1,3 +1,4 @@
+import './AboutMe.css';
 export default function About() {
     return (
         <div>

@@ -1,0 +1,25 @@
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-container h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .about-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Make sure to use a square image for proper border-radius effect */
+    margin-bottom: 15px;
+  }
+  
+  .about-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  

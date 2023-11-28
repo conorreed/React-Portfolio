@@ -1,5 +1,6 @@
 // Contact.jsx
 import ContactForm from '../components/ContactForm';
+import './Contact.css';
 
 const Contact = () => {
   return (
