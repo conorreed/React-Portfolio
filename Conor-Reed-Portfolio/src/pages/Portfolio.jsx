@@ -5,7 +5,7 @@ function Portfolio() {
   const projects = [
     {
       title: "Europe in Your Pocket",
-      imageSrc: "/EuropePocketPicture.jpg",
+      imageSrc: "/EuropePocketPicture.png",
       deployedLink: "https://crcarmen23.github.io/europe-in-your-pocket/",
       githubLink: "https://github.com/conorreed/europe-in-your-pocket",
     },
