@@ -1,6 +1,5 @@
 // ResumePage.jsx
 import Resume from '../components/Resume';
-import './ResumePage.css';
 
 const ResumePage = () => {
   return (

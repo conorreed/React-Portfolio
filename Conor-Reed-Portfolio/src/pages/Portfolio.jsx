@@ -1,5 +1,4 @@
 import Project from "../components/Project";
-import './Portfolio.css';
 
 function Portfolio() {
   const projects = [
