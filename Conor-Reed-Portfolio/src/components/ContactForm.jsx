@@ -43,7 +43,6 @@ const ContactForm = () => {
       return;
     }
 
-    // If no validation errors, submit the form (you can handle this part based on your requirements)
     // For now, let's just log the form data
     console.log('Form submitted:', formData);
 
