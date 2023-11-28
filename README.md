@@ -17,7 +17,7 @@ This is a portfolio that shows off some of the projects i've been working on thr
 Click the Deployed link
 
 ## Usage
-(insert Deployed link)
+https://6565580954bbaa135f70b793--leafy-granita-c0b535.netlify.app/
 
 ## License
 Refer to the [License file](LICENSE).
