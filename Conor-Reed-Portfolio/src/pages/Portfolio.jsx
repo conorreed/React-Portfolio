@@ -41,11 +41,13 @@ function Portfolio() {
   ];
 
   return (
-    <div className="portfolio">
-      <h2>Portfolio</h2>
-      <div className="project-container">
+    <div className="container mt-5">
+      <h2 className="display-4">Portfolio</h2>
+      <div className="row">
         {projects.map((project, index) => (
-          <Project key={index} {...project} />
+          <div className="col-md-4 mb-4" key={index}>
+            <Project {...project} />
+          </div>
         ))}
       </div>
     </div>

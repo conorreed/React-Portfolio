@@ -20,7 +20,6 @@ const ContactForm = () => {
     });
   };
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -37,7 +36,6 @@ const ContactForm = () => {
       validationErrors.message = 'Message is required';
     }
 
-
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return;
@@ -46,7 +44,6 @@ const ContactForm = () => {
     // For now, let's just log the form data
     console.log('Form submitted:', formData);
 
-  
     setFormData({
       name: '',
       email: '',
@@ -57,48 +54,59 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact-form">
+    <div className="contact-form container mt-5">
       <h2>Contact Me</h2>
       {formSubmitted ? (
-        <p>Thank you for your message! I will get back to you soon.</p>
+        <p className="alert alert-success">Thank you for your message! I will get back to you soon.</p>
       ) : (
         <form onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="name">Name:</label>
+          <div className="mb-3">
+            <label htmlFor="name" className="form-label">
+              Name:
+            </label>
             <input
               type="text"
               id="name"
               name="name"
               value={formData.name}
               onChange={handleInputChange}
+              className={`form-control ${errors.name ? 'is-invalid' : ''}`}
             />
-            {errors.name && <span className="error">{errors.name}</span>}
+            {errors.name && <div className="invalid-feedback">{errors.name}</div>}
           </div>
 
-          <div className="form-group">
-            <label htmlFor="email">Email:</label>
+          <div className="mb-3">
+            <label htmlFor="email" className="form-label">
+              Email:
+            </label>
             <input
               type="email"
               id="email"
               name="email"
               value={formData.email}
               onChange={handleInputChange}
+              className={`form-control ${errors.email ? 'is-invalid' : ''}`}
             />
-            {errors.email && <span className="error">{errors.email}</span>}
+            {errors.email && <div className="invalid-feedback">{errors.email}</div>}
           </div>
 
-          <div className="form-group">
-            <label htmlFor="message">Message:</label>
+          <div className="mb-3">
+            <label htmlFor="message" className="form-label">
+              Message:
+            </label>
             <textarea
               id="message"
               name="message"
               value={formData.message}
               onChange={handleInputChange}
+              className={`form-control ${errors.message ? 'is-invalid' : ''}`}
             />
-            {errors.message && <span className="error">{errors.message}</span>}
+            {errors.message && <div className="invalid-feedback">{errors.message}</div>}
           </div>
 
-          <button type="submit">Submit</button>
+          <button type="submit" className="btn btn-primary">
+            Submit
+          </button>
         </form>
       )}
     </div>

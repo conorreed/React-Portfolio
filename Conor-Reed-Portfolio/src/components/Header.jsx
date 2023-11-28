@@ -3,9 +3,11 @@ import Navigation from './Navigation';
 
 const Header = () => {
   return (
-    <header className="header">
-      <h1>Conor Reed</h1>
-      <Navigation />
+    <header className="header bg-dark text-light p-3">
+      <div className="container">
+        <h1 className="navbar-brand">Conor Reed</h1>
+        <Navigation />
+      </div>
     </header>
   );
 };

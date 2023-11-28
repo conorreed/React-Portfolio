@@ -1,10 +1,14 @@
-// ResumePage.jsx
 import Resume from '../components/Resume';
 
 const ResumePage = () => {
   return (
-    <div className="resume-page">
-      <Resume />
+    <div className="container mt-5">
+      <h2 className="display-4">Resume</h2>
+      <div className="row">
+        <div className="col-md-8">
+          <Resume />
+        </div>
+      </div>
     </div>
   );
 };
