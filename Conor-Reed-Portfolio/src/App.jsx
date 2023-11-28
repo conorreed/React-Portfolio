@@ -1,11 +1,11 @@
 // App.jsx
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './Header';
-import Footer from './Footer';
-import About from './About';
-import Portfolio from './Portfolio';
-import Contact from './Contact';
-import ResumePage from './ResumePage';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import About from './pages/AboutMe';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
+import ResumePage from './pages/ResumePage';
 
 const App = () => {
   return (
