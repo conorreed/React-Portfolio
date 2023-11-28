@@ -1,5 +1,5 @@
 // App.jsx
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -12,12 +12,12 @@ const App = () => {
   return (
     <Router>
       <Header />
-      <Switch>
-        <Route exact path="/" component={About} />
-        <Route path="/portfolio" component={Portfolio} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/resume" component={ResumePage} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/resume" element={<ResumePage />} />
+      </Routes>
       <Footer />
     </Router>
   );
